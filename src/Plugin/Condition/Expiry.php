@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * Contains \Drupal\block_expire\\Plugin\Condition\Expiry.
+ */
 namespace Drupal\block_expire\Plugin\Condition;
 use Drupal\Core\Condition\ConditionPluginBase;
 use Drupal\Core\Form\FormStateInterface;
