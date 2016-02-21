@@ -1,0 +1,5 @@
+name: Drupal Block expiry
+description: 'Module which allows to configure publish & expiry date'
+type: module
+package: conditions
+core: 8.x
