@@ -1,13 +1,8 @@
 <?php
-
 namespace Drupal\block_expire\Plugin\Condition;
-
 use Drupal\Core\Condition\ConditionPluginBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Datetime\DrupalDateTime;
-
-
-
 /**
  * Provides a 'Expiry ' condition.
  *
@@ -18,7 +13,6 @@ use Drupal\Core\Datetime\DrupalDateTime;
  *
  */
 class Expiry extends ConditionPluginBase   {
-
 /**
    * {@inheritdoc}
    */
@@ -30,12 +24,12 @@ public function summary() {
 }
 
 public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
-   $default_start = (!empty($this->configuration['start']) )? DrupalDateTime::createFromTimestamp($this->configuration['start']): '';  
+   $default_start = (!empty($this->configuration['start']) ) ? DrupalDateTime::createFromTimestamp($this->configuration['start']) : '';  
    $default_end = (!empty($this->configuration['end'])) ? DrupalDateTime::createFromTimestamp($this->configuration['end']) : '';
    $form['start'] = array(
   '#type' => 'datetime',
   '#title' => t('Publish Date'),
-  '#default_value'  =>$default_start );
+  '#default_value'  => $default_start );
 
    $form['end'] = array(
   '#type' => 'datetime',
@@ -66,7 +60,6 @@ public function buildConfigurationForm(array $form, FormStateInterface $form_sta
    */
   public function evaluate() {
   $status= true;
-
    if (empty( $this->configuration['start']) &&  empty( $this->configuration['end']) && !$this->isNegated()) {
       return TRUE;
     }
@@ -77,11 +70,7 @@ public function buildConfigurationForm(array $form, FormStateInterface $form_sta
     if (!empty( $this->configuration['end'])) {
       $status= $status && time()<=$this->configuration['end'];
     }
-
-
-return $status;
-
-
+ return $status;
   }
 
   public function defaultConfiguration() {
