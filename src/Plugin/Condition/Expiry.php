@@ -3,6 +3,7 @@
  * @file
  * Contains \Drupal\block_expire\\Plugin\Condition\Expiry.
  */
+
 namespace Drupal\block_expire\Plugin\Condition;
 use Drupal\Core\Condition\ConditionPluginBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -20,12 +21,15 @@ class Expiry extends ConditionPluginBase   {
 /**
    * {@inheritdoc}
    */
- 
+
 public function summary() {
 
 	return t('Expiry');
 
 }
+/**
+   * {@inheritdoc}
+   */
 
 public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
    $default_start = (!empty($this->configuration['start']) ) ? DrupalDateTime::createFromTimestamp($this->configuration['start']) : '';  
@@ -46,6 +50,7 @@ public function buildConfigurationForm(array $form, FormStateInterface $form_sta
   /**
    * {@inheritdoc}
    */
+
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
      
      if (is_object($form_state->getValue('start'))) { 
@@ -62,6 +67,7 @@ public function buildConfigurationForm(array $form, FormStateInterface $form_sta
  /**
    * {@inheritdoc}
    */
+
   public function evaluate() {
   $status= true;
    if (empty( $this->configuration['start']) &&  empty( $this->configuration['end']) && !$this->isNegated()) {
@@ -76,6 +82,10 @@ public function buildConfigurationForm(array $form, FormStateInterface $form_sta
     }
  return $status;
   }
+
+/**
+   * {@inheritdoc}
+   */
 
   public function defaultConfiguration() {
     return array('start' => '','end'=>'') + parent::defaultConfiguration();
