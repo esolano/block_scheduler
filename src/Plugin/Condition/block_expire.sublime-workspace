@@ -1,0 +1,502 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"strt",
+				"strtotime"
+			],
+			[
+				"c",
+				"configuration"
+			],
+			[
+				"crea",
+				"createInstance"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"co",
+				"config"
+			],
+			[
+				"demo_",
+				"demo_contact"
+			],
+			[
+				"s",
+				"schema"
+			],
+			[
+				"home",
+				"homestead"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Repository"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Nishanth/Desktop/block_expire",
+		"/Users/Nishanth/Desktop/block_expire/src",
+		"/Users/Nishanth/Desktop/block_expire/src/Plugin",
+		"/Users/Nishanth/Desktop/block_expire/src/Plugin/Condition"
+	],
+	"file_history":
+	[
+		"/Users/Nishanth/sites/homestead/drupal8/drupal8.sublime-project",
+		"/Users/Nishanth/Library/Application Support/Sublime Text 3/Packages/User/phpcs.sublime-settings",
+		"/Users/Nishanth/Desktop/block_expire/src/Plugin/Condition/Expiry.php",
+		"/Users/Nishanth/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/block_expire/README.txt",
+		"/Users/Nishanth/Desktop/block_expire/README.txt",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Plugin/Condition/Expiry.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Condition/ConditionPluginBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/language/src/Plugin/Condition/Language.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/block_expire/block_expire.info",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/comment/src/CommentForm.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block/src/BlockForm.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Block/BlockBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Datetime/DrupalDateTime.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Datetime/DateTimePlus.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/system/src/Plugin/Condition/RequestPath.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/node/src/Plugin/Condition/NodeType.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Condition/ConditionManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/system/src/Plugin/Condition/CurrentThemeCondition.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Condition/ConditionInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/CustomFormsManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Controller/DemoController.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Plugin/DefaultPluginManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Executable/ExecutableManagerInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Plugin/PluginManagerBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Controller/ControllerBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Block/BlockManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Plugin/PluginManagerInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Plugin/CategorizingPluginManagerInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Block/BlockManagerInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Executable/ExecutablePluginBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Block/BlockPluginInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Plugin/ContextAwarePluginBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/CustomFormsPluginInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/CustomFormsPluginBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Plugin/PluginBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Plugin/CustomForms/AnotherEnquiry.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Plugin/CustomForms/enquiry.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Entity/EntityTypeManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Annotation/Plugin/Discovery/AnnotatedClassDiscovery.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Annotation/Plugin.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Annotation/CustomForms.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Plugin/PluginBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Form/AdvancedForm.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Field/FieldItemInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Plugin/Field/FieldType/TwitterItem.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Field/FieldTypePluginManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/TypedData/ComplexDataInterface.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Field/FormatterPluginManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block_content/src/BlockContentTypeForm.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Entity/BundleEntityFormBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Entity/EntityForm.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Plugin/Block/DemoBlock.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/demo.services.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Annotation/RenderElement.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Plugin/Block/WidgetBlock.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Component/Annotation/PluginID.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Plugin/CategorizingPluginManagerTrait.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Annotation/FormElement.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Field/WidgetPluginManager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Display/Annotation/DisplayVariant.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Plugin/DisplayVariant/SimplePageVariant.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Element/RenderElement.php",
+		"/Users/Nishanth/Desktop/PM- Flip/process",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Element/Page.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/demo.module",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Element/Html.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Element/UnderlineText.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/demo.libraries.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/templates/underline-text.html.twig",
+		"/Users/Nishanth/sites/homestead/drupal8/themes/custom/trendyz/trendyz.libraries.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/responsive_image/responsive_image.libraries.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/responsive_image/responsive_image.module",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/responsive_image/templates/responsive-image.html.twig",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/contextual/src/Element/ContextualLinks.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/responsive_image/src/Element/ResponsiveImage.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/js/demo.js",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/templates/demo.html.twig",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/filter/src/Element/TextFormat.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/filter/src/Element/ProcessedText.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/field_ui/src/Element/FieldUiTable.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Form/CustomFormBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Element/Pager.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Render/Element/Actions.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Routing/RouteSubscriber.php",
+		"/Users/Nishanth/Desktop/rs0361:abc789",
+		"/Users/Nishanth/Desktop/untitled folder/process",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block/block.api.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/user/src/Plugin/Condition/UserRole.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block/block.post_update.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/system/tests/fixtures/update/block.block.thirdtestfor2354889.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block/tests/modules/block_test/src/Plugin/Condition/BaloneySpam.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block/src/Tests/Update/BlockContextMappingUpdateTest.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/system/tests/modules/condition_test/src/Plugin/Condition/ConditionTestDualUser.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block/tests/modules/block_test/src/Plugin/Block/TestContextAwareUnsatisfiedBlock.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/block/tests/modules/block_test/src/Plugin/Block/TestContextAwareBlock.php",
+		"/Users/Nishanth/Desktop/md_dis.txt",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/node/src/PageCache/DenyNodePreview.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/node/node.routing.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Form/ContactForm.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/demo.routing.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/config/install/demo.settings.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Form/SettingsForm.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/config/schema/demo.schema.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Form/ConfigFormBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/core.services.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Config/ConfigFactory.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/image/config/install/image.settings.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/config/schema/core.data_types.schema.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/image/config/schema/image.schema.yml",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Access/DemoAccessCheck.php",
+		"/Users/Nishanth/sites/homestead/drupal8/themes/custom/trendyz/templates/block.html.twig",
+		"/Users/Nishanth/sites/homestead/drupal8/themes/custom/trendyz/templates/block--demo--trendyz_demoblock.html.twig",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/templates/block--demoblock.html.twig",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/templates/demoblock.html.twig",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/Plugin/Derivative/DemoBlockDerivative.php",
+		"/Users/Nishanth/.homestead/Homestead.yaml",
+		"/Users/Nishanth/sites/homestead/drupal8/core/modules/node/src/Access/NodeAddAccessCheck.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Cache/Context/UserCacheContext.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Cache/Context/UserCacheContextBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Cache/Context/CacheContextsPass.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/DependencyInjection/Compiler/RegisterEventSubscribersPass.php",
+		"/Users/Nishanth/sites/homestead/drupal8/vendor/symfony/http-kernel/KernelEvents.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/EventSubscriber/demoSubscriber.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Cache/Context/IpCacheContext.php",
+		"/Users/Nishanth/sites/homestead/drupal8/core/lib/Drupal/Core/Cache/Context/RequestStackCacheContextBase.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/src/DemoContent.php",
+		"/Users/Nishanth/sites/homestead/drupal8/modules/demo/demo.permissions.yml"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules/block",
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8/core/lib",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules/block",
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules/node/src",
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8",
+			"/Users/Nishanth/sites/homestead/drupal8/modules/demo",
+			"/Users/Nishanth/sites/homestead/drupal8/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8/core/themes/classy/css/components",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules/system",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules/block",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules/node",
+			"/Users/Nishanth/sites/homestead/drupal8/core/lib",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules",
+			"/Users/Nishanth/sites/homestead/drupal8/core/modules/comment",
+			"/Users/Nishanth/sites/homestead/drupal8/core"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"phpcbf_executable_path",
+			"_path",
+			"&& !$this->isNegated()",
+			"'#type' => 'datetime'",
+			"getTim",
+			"'#type' => 'datetime'",
+			"datetime",
+			"#datetime",
+			"@ContextDefinition",
+			" * @Condition(\n *   id = ",
+			"context",
+			"ConditionPluginBase",
+			"AnnotatedClassDiscovery",
+			"extends Bundle",
+			"id = \"text_plain\"",
+			"CategorizingPluginManagerTrait",
+			"DefaultPluginManager",
+			"block",
+			"DefaultPluginManager",
+			"PageDisplayVariant",
+			"demo",
+			"@RenderElement",
+			"Element",
+			"Condition",
+			"@Condition",
+			"user_role",
+			"@Condition",
+			"context_mapping",
+			"baloney_spam",
+			"current_theme",
+			"@Condition",
+			"node_type",
+			"*   context =",
+			"context =",
+			"'managed_file'",
+			"managed_file",
+			"@Condition(",
+			"DenyNodePreview",
+			"@current_user",
+			"findTaggedServiceIds",
+			"'event_subscriber'",
+			"date",
+			"implements AccessInterface",
+			"AccessInterface",
+			"_access",
+			":_access",
+			" :_access",
+			" _access:",
+			"_access:",
+			"_access",
+			"tags:\n      - { name: access_check,",
+			"addCheckService",
+			"access_manager",
+			"access_check",
+			"applies_to",
+			"event_subscriber",
+			"cache.context",
+			"setChangedTime",
+			"DemoInterface",
+			"DemoInterface;",
+			"flip",
+			"admin/conte",
+			"PublishComment",
+			"trusted_host_patterns",
+			"TwitterItem",
+			"@FieldType",
+			"  \n",
+			"tags:",
+			"translatable",
+			"translatble",
+			"translat",
+			"weight:\nweight:",
+			"site_information_settings",
+			"system.site",
+			"site_information_settings",
+			"demo",
+			"BanAdmin",
+			" _form: ",
+			"_form:",
+			" $container->get('route')",
+			"PagerSelectExtender",
+			"admin/content",
+			"admin/cont",
+			"admin/con",
+			"admin/co",
+			"'#theme' => 'pager'",
+			"pager",
+			"count_query",
+			"clone $query",
+			"clone",
+			"pager_pager",
+			"PagerSelectExtender",
+			"PagerDefault",
+			"appli",
+			"class:",
+			"attributes:",
+			"options:",
+			"option",
+			"contextual_links",
+			"entity.node.canonical",
+			"block",
+			"system.site_maintenance_mode",
+			"form",
+			"serial",
+			"type'=",
+			"type'=se",
+			"serial",
+			"insert(",
+			"insert",
+			"libraries:",
+			"globing-",
+			"_theme()",
+			"#theme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "block_expire.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 347.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
