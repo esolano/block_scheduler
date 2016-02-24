@@ -55,9 +55,13 @@ class Expiry extends ConditionPluginBase {
 
     if (is_object($form_state->getValue('start'))) {
       $this->configuration['start'] = $form_state->getValue('start')->getTimestamp();
+    } else {
+      $this->configuration['start']='';
     }
     if (is_object($form_state->getValue('end'))) {
       $this->configuration['end'] = $form_state->getValue('end')->getTimestamp();
+    }else {
+      $this->configuration['end']='';
     }
 
     parent::submitConfigurationForm($form, $form_state);
