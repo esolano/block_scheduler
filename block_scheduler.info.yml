@@ -1,4 +1,4 @@
-name: Drupal Block expiry
+name: Drupal Block Schedular
 description: 'Module which allows to configure publish & expiry date'
 type: module
 package: conditions
