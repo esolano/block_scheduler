@@ -4,7 +4,7 @@
  * Contains \Drupal\block_scheduler\Plugin\Condition\Expiry.
  */
 
-namespace Drupal\block_expire\Plugin\Condition;
+namespace Drupal\block_scheduler\Plugin\Condition;
 
 use Drupal\Core\Condition\ConditionPluginBase;
 use Drupal\Core\Form\FormStateInterface;
