@@ -1,6 +1,6 @@
 INTRODUCTION
 ------------
-The Block expire module is condition plugin which adds configuartion
+The Block expire module is condition plugin which adds configuration
 form in block with publish and expiry dates
 
  * For a full description of the module, visit the project page:

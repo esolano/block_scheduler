@@ -1,4 +1,4 @@
-name: Drupal Block Schedular
+name: Drupal Block Scheduler
 description: 'Module which allows to configure publish & expiry date'
 type: module
 package: conditions

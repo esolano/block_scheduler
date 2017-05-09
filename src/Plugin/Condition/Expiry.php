@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains \Drupal\block_scheduler\Plugin\Condition\Expiry.
+ * Expiry condition for Block.
  */
 
 namespace Drupal\block_scheduler\Plugin\Condition;
@@ -24,7 +24,7 @@ class Expiry extends ConditionPluginBase {
    */
   public function summary() {
 
-    return t('Expiry');
+    return $this->t('Expiry');
   }
   /**
    * {@inheritdoc}
@@ -33,17 +33,17 @@ class Expiry extends ConditionPluginBase {
 
     $default_start = (!empty($this->configuration['start'])) ? DrupalDateTime::createFromTimestamp($this->configuration['start']) : '';
     $default_end = (!empty($this->configuration['end'])) ? DrupalDateTime::createFromTimestamp($this->configuration['end']) : '';
-    $form['start'] = array(
+    $form['start'] = [
       '#type' => 'datetime',
       '#title' => t('Publish Date'),
       '#default_value' => $default_start,
-    );
+    ];
 
-    $form['end'] = array(
+    $form['end'] = [
       '#type' => 'datetime',
       '#title' => t('Expiry Date'),
       '#default_value' => $default_end,
-    );
+    ];
 
     return parent::buildConfigurationForm($form, $form_state);
   }
