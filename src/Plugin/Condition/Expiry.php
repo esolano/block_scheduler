@@ -52,8 +52,24 @@ class Expiry extends ConditionPluginBase {
   /**
    * {@inheritdoc}
    */
-  public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
+  public function validateConfigurationForm(array &$form, FormStateInterface $form_state) {
+    // Make sure dates are filled in prior to checking
+    // Make sure we are not dealing with array values
+    if (!empty($form_state->getValue('start')) && !is_array($form_state->getValue('start'))
+      && !empty($form_state->getValue('end')) && !is_array($form_state->getValue('end'))) {
+      // Now we can validate dates since we have good data now
+      if (($form_state->getValue('end')
+          ->getTimestamp()) <= ($form_state->getValue('start')
+          ->getTimestamp())) {
+        $form_state->setErrorByName('end', $this->t('Please select expiry date greater than publish date.'));
+      }
+    }
+  }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
     if (is_object($form_state->getValue('start'))) {
       $this->configuration['start'] = $form_state->getValue('start')
         ->getTimestamp();
@@ -61,6 +77,7 @@ class Expiry extends ConditionPluginBase {
     else {
       $this->configuration['start'] = '';
     }
+
     if (is_object($form_state->getValue('end'))) {
       $this->configuration['end'] = $form_state->getValue('end')
         ->getTimestamp();
@@ -76,11 +93,11 @@ class Expiry extends ConditionPluginBase {
    * {@inheritdoc}
    */
   public function evaluate() {
-
     $status = TRUE;
     if (empty($this->configuration['start']) && empty($this->configuration['end']) && !$this->isNegated()) {
       return TRUE;
     }
+
     if (!empty($this->configuration['start'])) {
       $status = $status && time() >= $this->configuration['start'];
     }
