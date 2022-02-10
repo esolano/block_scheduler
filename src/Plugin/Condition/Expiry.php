@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Expiry condition for Block.
+ * Expiry condition for Blocks.
  */
 
 namespace Drupal\block_scheduler\Plugin\Condition;
@@ -11,7 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Datetime\DrupalDateTime;
 
 /**
- * Provides a 'Expiry ' condition.
+ * Provides a 'Expiry' condition.
  *
  * @Condition(
  *   id = "expiry",
@@ -19,20 +19,21 @@ use Drupal\Core\Datetime\DrupalDateTime;
  * )
  */
 class Expiry extends ConditionPluginBase {
+
   /**
    * {@inheritdoc}
    */
   public function summary() {
-
     return $this->t('Expiry');
   }
+
   /**
    * {@inheritdoc}
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
-
     $default_start = (!empty($this->configuration['start'])) ? DrupalDateTime::createFromTimestamp($this->configuration['start']) : '';
     $default_end = (!empty($this->configuration['end'])) ? DrupalDateTime::createFromTimestamp($this->configuration['end']) : '';
+
     $form['start'] = [
       '#type' => 'datetime',
       '#title' => t('Publish Date'),
@@ -54,13 +55,15 @@ class Expiry extends ConditionPluginBase {
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
 
     if (is_object($form_state->getValue('start'))) {
-      $this->configuration['start'] = $form_state->getValue('start')->getTimestamp();
+      $this->configuration['start'] = $form_state->getValue('start')
+        ->getTimestamp();
     }
     else {
       $this->configuration['start'] = '';
     }
     if (is_object($form_state->getValue('end'))) {
-      $this->configuration['end'] = $form_state->getValue('end')->getTimestamp();
+      $this->configuration['end'] = $form_state->getValue('end')
+        ->getTimestamp();
     }
     else {
       $this->configuration['end'] = '';
@@ -75,7 +78,7 @@ class Expiry extends ConditionPluginBase {
   public function evaluate() {
 
     $status = TRUE;
-    if (empty($this->configuration['start']) &&  empty($this->configuration['end']) && !$this->isNegated()) {
+    if (empty($this->configuration['start']) && empty($this->configuration['end']) && !$this->isNegated()) {
       return TRUE;
     }
     if (!empty($this->configuration['start'])) {
@@ -93,8 +96,7 @@ class Expiry extends ConditionPluginBase {
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-
-    return array('start' => '', 'end' => '') + parent::defaultConfiguration();
+    return ['start' => '', 'end' => ''] + parent::defaultConfiguration();
   }
 
 }
