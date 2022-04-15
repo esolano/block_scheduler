@@ -1,8 +1,4 @@
 <?php
-/**
- * @file
- * Expiry condition for Blocks.
- */
 
 namespace Drupal\block_scheduler\Plugin\Condition;
 
@@ -44,6 +40,7 @@ class Expiry extends ConditionPluginBase implements ContainerFactoryPluginInterf
    * Setter for the time service.
    *
    * @param \Drupal\Component\Datetime\TimeInterface $time
+   *   The time.
    */
   protected function setTime(TimeInterface $time) {
     $this->time = $time;
@@ -65,13 +62,13 @@ class Expiry extends ConditionPluginBase implements ContainerFactoryPluginInterf
 
     $form['start'] = [
       '#type' => 'datetime',
-      '#title' => t('Publish Date'),
+      '#title' => $this->t('Publish Date'),
       '#default_value' => $default_start,
     ];
 
     $form['end'] = [
       '#type' => 'datetime',
-      '#title' => t('Expiry Date'),
+      '#title' => $this->t('Expiry Date'),
       '#default_value' => $default_end,
     ];
 
@@ -83,13 +80,13 @@ class Expiry extends ConditionPluginBase implements ContainerFactoryPluginInterf
    */
   public function validateConfigurationForm(array &$form, FormStateInterface $form_state) {
     // Make sure dates are filled in prior to checking
-    // Make sure we are not dealing with array values
+    // Make sure we are not dealing with array values.
     if (!empty($form_state->getValue('start')) && !is_array($form_state->getValue('start'))
       && !empty($form_state->getValue('end')) && !is_array($form_state->getValue('end'))) {
-      // Now we can validate dates since we have good data now
+      // Now we can validate dates since we have good data now.
       if (($form_state->getValue('end')
-          ->getTimestamp()) <= ($form_state->getValue('start')
-          ->getTimestamp())) {
+        ->getTimestamp()) <= ($form_state->getValue('start')
+        ->getTimestamp())) {
         $form_state->setErrorByName('end', $this->t('Please select expiry date greater than publish date.'));
       }
     }
@@ -161,4 +158,5 @@ class Expiry extends ConditionPluginBase implements ContainerFactoryPluginInterf
 
     return Cache::mergeMaxAges(parent::getCacheMaxAge(), $max_age);
   }
+
 }

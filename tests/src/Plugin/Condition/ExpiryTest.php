@@ -9,7 +9,7 @@ use Drupal\Tests\UnitTestCase;
 use Symfony\Component\DependencyInjection\Container;
 
 /**
- * Class ExpiryTest
+ * Expiry test class.
  *
  * @group auto_block_scheduler
  *
@@ -39,6 +39,9 @@ class ExpiryTest extends UnitTestCase {
     $this->assertEquals($expected_max_age, $fixture->getCacheMaxAge());
   }
 
+  /**
+   * Get caching cases.
+   */
   public function providerGetCacheMaxAge() {
     $cases = [];
 
