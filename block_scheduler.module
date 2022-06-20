@@ -42,7 +42,7 @@ function block_scheduler_block_access(Block $block, $operation, AccountInterface
       if (!empty($conditions['expiry']['start']) && time() < $conditions['expiry']['start']) {
         $forbidden = TRUE;
       }
-      if (!empty($conditions['expiry']['end']) && $conditions['expiry']['end'] >= time()) {
+      if (!empty($conditions['expiry']['end']) && time() <= $conditions['expiry']['end']) {
         $forbidden = TRUE;
       }
       return AccessResult::forbiddenIf($forbidden === TRUE)
