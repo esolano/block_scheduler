@@ -2,4 +2,4 @@ name: Block Scheduler
 description: 'This module adds block visibility conditions for scheduling blocks.'
 type: module
 package: conditions
-core_version_requirement: ^8.8 || ^9 || ^10
+core_version_requirement: ^8.8 || ^9 || ^10 || ^11
